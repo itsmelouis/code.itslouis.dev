@@ -12,6 +12,10 @@ Live at **[code.itslouis.dev](https://code.itslouis.dev)**.
 
 [Stack](#stack) • [Quick Start](#quick-start) • [Scripts](#scripts) • [Privacy](#privacy) • [License](#license)
 
+<a href="https://code.itslouis.dev">
+  <img src="./.github/assets/preview.png" alt="Preview of the code.itslouis.dev editor" width="100%">
+</a>
+
 </div>
 
 ## Stack
