@@ -1,0 +1,7 @@
+{
+  "plugins": ["oxc", "typescript", "unicorn", "vue"],
+  "categories": {
+    "correctness": "warn"
+  },
+  "ignorePatterns": [".nuxt/**", ".output/**", "node_modules/**"]
+}

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Blue hour</title>
+  <desc id="desc">An original anime-inspired moonlit lake with flowers and distant mountains.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#17203d"/><stop offset=".52" stop-color="#456b89"/><stop offset="1" stop-color="#b6a6ac"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#547c91"/><stop offset="1" stop-color="#101f3c"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="14"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1210" cy="205" r="82" fill="#f1efe2"/>
+  <circle cx="1178" cy="175" r="85" fill="#253451"/>
+  <circle cx="1210" cy="205" r="130" fill="#eaf6f5" opacity=".13" filter="url(#blur)"/>
+  <g fill="#e9f5fa" opacity=".62">
+    <circle cx="150" cy="130" r="2"/><circle cx="280" cy="245" r="3"/><circle cx="470" cy="102" r="2"/><circle cx="690" cy="204" r="2"/><circle cx="890" cy="91" r="3"/><circle cx="1430" cy="173" r="2"/>
+  </g>
+  <path d="M0 610 205 435l153 101 181-183 193 172 176-223 215 253 135-118 342 192v116H0Z" fill="#253b59"/>
+  <path d="M0 664 237 522l141 88 190-132 193 115 149-130 217 141 156-77 307 137v118H0Z" fill="#1c304c" opacity=".96"/>
+  <path d="M0 697c302 38 518 23 763-8 286-36 548-32 837 17v294H0Z" fill="url(#water)"/>
+  <path d="M960 720c154-35 321-34 488 9-162 15-315 14-458-3Z" fill="#e8e8dc" opacity=".25" filter="url(#soft)"/>
+  <path d="M1065 751c98-18 201-14 299 12-100 12-198 7-294-2Z" fill="#eef8ec" opacity=".18"/>
+  <g stroke="#a9cbd0" stroke-width="3" opacity=".28">
+    <path d="M0 775c260 25 496 22 710-8M670 833c291-34 583-25 930 25M40 912c316 22 602 16 858-12"/>
+  </g>
+  <path d="M0 860c168-57 315-46 466 25 126 59 247 67 366 24 153-55 296-47 430 15 108 50 220 59 338 28v48H0Z" fill="#0c1832"/>
+  <g stroke="#101d38" stroke-width="8" stroke-linecap="round">
+    <path d="M112 1000V786m85 214V824m116 176V765m100 235V842m860 158V807m99 193V760m112 240V835"/>
+  </g>
+  <g fill="#8eb9c6">
+    <g transform="translate(112 780)"><ellipse rx="24" ry="10" transform="rotate(-25)"/><ellipse rx="24" ry="10" transform="rotate(35)"/><circle r="8" fill="#f2c9ce"/></g>
+    <g transform="translate(313 758)"><ellipse rx="28" ry="12" transform="rotate(-15)"/><ellipse rx="28" ry="12" transform="rotate(52)"/><circle r="9" fill="#efd0b8"/></g>
+    <g transform="translate(1273 800)"><ellipse rx="25" ry="11" transform="rotate(-35)"/><ellipse rx="25" ry="11" transform="rotate(28)"/><circle r="8" fill="#e8bfc9"/></g>
+    <g transform="translate(1372 752)"><ellipse rx="29" ry="12" transform="rotate(-22)"/><ellipse rx="29" ry="12" transform="rotate(43)"/><circle r="9" fill="#edd4b8"/></g>
+  </g>
+  <g fill="#a8d5dd" opacity=".25" filter="url(#blur)">
+    <circle cx="310" cy="810" r="48"/><circle cx="1370" cy="810" r="58"/>
+  </g>
+</svg>

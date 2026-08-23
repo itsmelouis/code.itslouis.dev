@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Night train</title>
+  <desc id="desc">An original anime-inspired night city.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121530"/><stop offset=".52" stop-color="#354f96"/><stop offset="1" stop-color="#d27b92"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="6"/></filter>
+    <pattern id="windows" width="64" height="54" patternUnits="userSpaceOnUse">
+      <rect x="10" y="10" width="16" height="8" rx="2" fill="#ffd58d" opacity=".65"/><rect x="37" y="29" width="12" height="7" rx="2" fill="#8bd9ff" opacity=".4"/>
+    </pattern>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="1255" cy="174" r="66" fill="#fff4dc" opacity=".94"/>
+  <circle cx="1255" cy="174" r="104" fill="#ffecc8" opacity=".18" filter="url(#blur)"/>
+  <g fill="#fff" opacity=".7">
+    <circle cx="180" cy="130" r="2"/><circle cx="337" cy="245" r="2"/><circle cx="520" cy="98" r="3"/><circle cx="889" cy="166" r="2"/><circle cx="1062" cy="82" r="2"/><circle cx="1435" cy="275" r="3"/>
+  </g>
+  <path d="M0 478 180 403l122 54 160-108 144 95 177-151 188 153 117-90 244 130 268-50v564H0Z" fill="#202851" opacity=".82"/>
+  <path d="M0 575h154V412h180v163h96V348h204v227h118V440h230v135h108V316h210v259h300v425H0Z" fill="#141a38"/>
+  <path d="M0 575h154V412h180v163h96V348h204v227h118V440h230v135h108V316h210v259h300v425H0Z" fill="url(#windows)" opacity=".84"/>
+  <rect y="700" width="1600" height="300" fill="#090d22"/>
+  <g filter="url(#blur)" opacity=".65">
+    <ellipse cx="238" cy="792" rx="92" ry="14" fill="#48b9ff"/><ellipse cx="1260" cy="844" rx="124" ry="17" fill="#ff648f"/><ellipse cx="779" cy="756" rx="65" ry="10" fill="#ffd674"/>
+  </g>
+  <path d="M0 704c330 44 612 46 884 15 263-31 486-27 716 7v274H0Z" fill="#0b1027" opacity=".78"/>
+  <g opacity=".85">
+    <path d="M0 706h1600" stroke="#9bc7ff" stroke-width="5"/><path d="M0 722h1600" stroke="#ff95b4" stroke-width="2" opacity=".65"/>
+  </g>
+  <g fill="#eff7ff" filter="url(#glow)" opacity=".6">
+    <circle cx="180" cy="680" r="4"/><circle cx="589" cy="618" r="5"/><circle cx="987" cy="676" r="4"/><circle cx="1395" cy="611" r="5"/>
+  </g>
+</svg>

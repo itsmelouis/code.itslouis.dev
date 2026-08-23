@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Signal glow</title>
+  <desc id="desc">An original anime-inspired sunset with railway signals and power lines.</desc>
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#34285f"/><stop offset=".44" stop-color="#a34e75"/><stop offset=".72" stop-color="#f59378"/><stop offset="1" stop-color="#fac58d"/>
+    </linearGradient>
+    <radialGradient id="sun"><stop stop-color="#fff7d4"/><stop offset="1" stop-color="#ffd18d" stop-opacity="0"/></radialGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#sunset)"/>
+  <circle cx="1140" cy="410" r="210" fill="url(#sun)" opacity=".95"/>
+  <g fill="#ffe5d0" opacity=".2" filter="url(#blur)">
+    <ellipse cx="365" cy="263" rx="300" ry="42"/><ellipse cx="780" cy="340" rx="210" ry="34"/><ellipse cx="1330" cy="224" rx="245" ry="39"/>
+  </g>
+  <g fill="#f9d6cd" opacity=".5">
+    <path d="M0 285c160-68 280-51 401 0 100 42 210 49 319 4-130 91-284 95-423 43C184 290 95 298 0 342Z"/>
+    <path d="M925 214c111-44 229-27 322 13 103 45 221 38 353-14v77c-136 43-258 44-369 4-99-36-199-48-306-6Z"/>
+  </g>
+  <path d="M0 705 178 628l136 42 182-102 178 77 165-95 211 108 201-71 349 116v297H0Z" fill="#2e2445"/>
+  <path d="M0 800c280-70 498-48 730 8 287 69 548 32 870-45v237H0Z" fill="#181b32"/>
+  <g stroke="#191a2e" stroke-linecap="round">
+    <path d="M240 184v816M1338 130v870" stroke-width="20"/>
+    <path d="m-60 348 1720-188M-40 414l1680-111M-100 518l1760-60" stroke-width="7"/>
+    <path d="M240 256 78 375M240 256l182 72M1338 216l-169 121M1338 216l181 72" stroke-width="10"/>
+  </g>
+  <g transform="translate(305 550)">
+    <rect x="0" width="30" height="450" rx="10" fill="#191a2e"/>
+    <rect x="-64" y="14" width="160" height="255" rx="38" fill="#202039" stroke="#3a3152" stroke-width="8"/>
+    <circle cx="16" cy="78" r="38" fill="#ff5f68"/><circle cx="16" cy="78" r="65" fill="#ff5366" opacity=".34" filter="url(#blur)"/>
+    <circle cx="16" cy="184" r="38" fill="#312e49"/>
+  </g>
+  <g transform="translate(1198 615) scale(.72)">
+    <rect x="0" width="30" height="540" rx="10" fill="#191a2e"/>
+    <rect x="-64" y="14" width="160" height="255" rx="38" fill="#202039" stroke="#3a3152" stroke-width="8"/>
+    <circle cx="16" cy="78" r="38" fill="#312e49"/><circle cx="16" cy="184" r="38" fill="#f5c552"/><circle cx="16" cy="184" r="62" fill="#ffd25c" opacity=".25" filter="url(#blur)"/>
+  </g>
+  <g fill="#0e1428" opacity=".95">
+    <path d="M0 900h1600v100H0Z"/><path d="M390 847h64v153h-64zM512 870h92v130h-92zM980 828h80v172h-80zM1090 883h115v117h-115z"/>
+  </g>
+  <g fill="#fff1cc" opacity=".65">
+    <circle cx="560" cy="713" r="3"/><circle cx="840" cy="642" r="3"/><circle cx="1010" cy="730" r="4"/><circle cx="1450" cy="698" r="3"/>
+  </g>
+</svg>
