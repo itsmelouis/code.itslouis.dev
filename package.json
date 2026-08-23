@@ -35,7 +35,8 @@
     "oxlint": "^1.79.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^5.9.3",
-    "vue-tsc": "^3.3.11"
+    "vue-tsc": "^3.3.11",
+    "wrangler": "4.125.0"
   },
   "engines": {
     "node": ">=24.0.0"
