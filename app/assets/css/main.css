@@ -347,15 +347,18 @@ button:disabled {
 }
 
 .toolbar {
-  @apply fixed z-50 flex items-center gap-3 overflow-x-auto rounded-2xl border border-graphite-200 bg-white/95 p-3 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-graphite-900/95;
+  @apply fixed z-50 flex items-center gap-2 overflow-x-auto rounded-2xl border border-graphite-200 bg-white/95 p-3 shadow-2xl backdrop-blur-xl dark:border-white/10 dark:bg-graphite-900/95;
 
   bottom: 16px;
   left: 50%;
   max-width: calc(100vw - 32px);
   min-height: 68px;
   transform: translateX(-50%);
-  scrollbar-color: var(--color-graphite-500) transparent;
-  scrollbar-width: thin;
+  scrollbar-width: none;
+}
+
+.toolbar::-webkit-scrollbar {
+  display: none;
 }
 
 .tool-separator {
@@ -449,7 +452,7 @@ button:disabled {
 }
 
 .compact-field input[type="number"] {
-  width: 58px;
+  width: 48px;
   padding: 0;
   border: 0;
   color: var(--text);
