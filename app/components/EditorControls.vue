@@ -27,6 +27,24 @@ const frames: Array<{ value: FrameStyle; label: string }> = [
   { value: "windows", label: "Win" },
 ];
 
+const tooltip = ref<{ text: string; x: number; y: number } | null>(null);
+
+function showTooltip(event: PointerEvent | FocusEvent) {
+  const target = event.currentTarget as HTMLElement;
+  if (event instanceof PointerEvent && event.pointerType !== "mouse") return;
+  if (event instanceof FocusEvent && !target.matches(":focus-visible")) return;
+  const rect = target.getBoundingClientRect();
+  tooltip.value = {
+    text: target.getAttribute("aria-label") ?? "",
+    x: rect.left + rect.width / 2,
+    y: rect.top,
+  };
+}
+
+function hideTooltip() {
+  tooltip.value = null;
+}
+
 function chooseBackground(id: EditorState["background"]) {
   state.value.background = id;
   emit("clearCustomBackground");
@@ -44,7 +62,7 @@ function setNumber(
 </script>
 
 <template>
-  <aside class="toolbar" aria-label="Editor tools">
+  <aside class="toolbar" aria-label="Editor tools" @scroll="hideTooltip" @keydown.esc="hideTooltip">
     <div class="background-picker" aria-label="Background">
       <Icon name="lucide:image" class="size-4.25" />
       <button
@@ -176,7 +194,10 @@ function setNumber(
     <button
       class="tool-icon"
       type="button"
-      title="Reset"
+      @pointerenter="showTooltip"
+      @pointerleave="hideTooltip"
+      @focus="showTooltip"
+      @blur="hideTooltip"
       aria-label="Reset editor"
       @click="emit('reset')"
     >
@@ -186,7 +207,10 @@ function setNumber(
       class="tool-icon"
       type="button"
       :disabled="Boolean(busy)"
-      title="Share"
+      @pointerenter="showTooltip"
+      @pointerleave="hideTooltip"
+      @focus="showTooltip"
+      @blur="hideTooltip"
       aria-label="Copy share link"
       @click="emit('share')"
     >
@@ -198,7 +222,10 @@ function setNumber(
       class="tool-icon"
       type="button"
       :disabled="Boolean(busy)"
-      title="Copy image"
+      @pointerenter="showTooltip"
+      @pointerleave="hideTooltip"
+      @focus="showTooltip"
+      @blur="hideTooltip"
       aria-label="Copy image"
       @click="emit('copyImage')"
     >
@@ -226,5 +253,16 @@ function setNumber(
       <Icon v-else name="lucide:download" class="size-4.25" />
       SVG
     </button>
+
+    <Teleport to="body">
+      <span
+        v-if="tooltip"
+        class="toolbar-tooltip"
+        aria-hidden="true"
+        :style="{ left: `${tooltip.x}px`, top: `${tooltip.y}px` }"
+      >
+        {{ tooltip.text }}
+      </span>
+    </Teleport>
   </aside>
 </template>
